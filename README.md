@@ -1,7 +1,7 @@
 [![](https://i.imgur.com/UelUjKAh.png)](#)
 
 This fork allows OP 7.10 with Grey Panda on the 2019+ Rav4Hybrid with TSS2.0
-It also disables update checks and locout from self driving for 10 years
+It also disables update checks and lockout from self driving for 10 years
 
 Table of Contents
 =======================
