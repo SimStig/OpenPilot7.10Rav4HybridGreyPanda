@@ -10,14 +10,16 @@ cd /data && rm -rf openpilot && git clone -b v0.7.10 https://github.com/commaai/
 
 once 7.10 installed , in workbench use the Nano editor to edit the two files in the compare:
 
+- remove "CAR.RAV4H_TSS2" from the IGNORED_FINGERPRINTS
 nano selfdrive/car/toyota/values.py 
- - remove "CAR.RAV4H_TSS2" from the IGNORED_FINGERPRINTS
 ctrl x to exit , y to save, and save as same name
 
-selfdrive/thermald/thermald.py 
+
 - Add days (10 years is what I added) to:
---DAYS_NO_CONNECTIVITY_MAX = 36500  # do not allow to engage after a week without internet
---DAYS_NO_CONNECTIVITY_PROMPT = 36500  # send an offroad prompt after 4 days with no internet
+nano selfdrive/thermald/thermald.py 
+
+-->DAYS_NO_CONNECTIVITY_MAX = 36500  # do not allow to engage after a week without internet
+-->DAYS_NO_CONNECTIVITY_PROMPT = 36500  # send an offroad prompt after 4 days with no internet
 ctrl x to exit , y to save, and save as same name
 
 Now reboot the Eon and you have a non upgradng 7.10 that works on your grey panda equiped 2019+ Rav4 hybrid
